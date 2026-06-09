@@ -6,18 +6,18 @@ from .models import SyncTestModel, LogModel,ThreadTestModel,TransactionTestModel
 from signals_app.views import signal_thread_id
 
 @receiver(post_save,sender=SyncTestModel)
-def test_signal(sender, instance, **kwarg):
+def sync_test_signal_reciever(sender, instance, **kwarg):
     print("Signal Started")
     time.sleep(5)
     print("Signal finished")
 
 @receiver(post_save, sender=ThreadTestModel)
-def test_thread_signal(sender, instance, **kwargs):
+def test_thread_signal_reciever(sender, instance, **kwargs):
     import signals_app.views
     signals_app.views.signal_thread_id = threading.get_ident()
 
 @receiver(post_save,sender=TransactionTestModel)
-def test_transaction_signal(sender, instance, **kwargs ):
+def test_transaction_signal_reciever(sender, instance, **kwargs ):
     LogModel.objects.create(
         message="Created From signal"
     )
