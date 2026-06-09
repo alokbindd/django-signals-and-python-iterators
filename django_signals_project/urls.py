@@ -1,5 +1,5 @@
 """
-URL configuration for accuknox_assignment project.
+URL configuration for django_signals_project project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('signals_app.urls')),
+    path('rectangle/', include('rectangle_app.urls')),
 ]
