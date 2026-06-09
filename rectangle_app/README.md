@@ -98,7 +98,7 @@ for item in rect:
 
 ## Output
 
-![alt text](django-signals-and-python-iterators/output-images/image.png)
+![alt text](../output-images/image.png)
 
 Example Output:
 
