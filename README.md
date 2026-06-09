@@ -1,3 +1,23 @@
+# Django Signals and Python Iterators
+
+A collection of practical Python and Django examples demonstrating:
+
+## Topics Covered
+
+### Part 1 - Django Signals
+- Signal execution behavior
+- Thread execution behavior
+- Database transaction behavior
+
+### Part 2 - Custom Python Classes
+- Iterator Protocol
+- Custom Iterable Objects
+- Rectangle Iterator Implementation
+
+📄 **Part 2 Documentation:** [Rectangle Iterator](rectangle_app/README.md)
+
+---
+
 # Topic: Django Signals
 
 ## What are Django Signals?
