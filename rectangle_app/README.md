@@ -98,7 +98,7 @@ for item in rect:
 
 ## Output
 
-![alt text](../output-images/image.png)
+![alt text](../output-images/rectangle.png)
 
 Example Output:
 
